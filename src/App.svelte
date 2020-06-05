@@ -1,6 +1,7 @@
 <script>
 	export let name = 'Ethan';
-	import Comp from "./components/comp.svelte"
+	import Comp from "./components/comp.svelte";
+	import Clock from "./components/clock.svelte";
 
 	function handleClick() {
 		alert('clicked');
@@ -10,8 +11,8 @@
 
 <main>
 	<h1>Hello {name}!</h1>
-	<Comp on:click={handleClick}/> 
-	<p>This is my first project</p>
+	<Comp/>
+	<Clock/>
 </main>
 
 <style>
